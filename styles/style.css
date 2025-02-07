@@ -10,6 +10,10 @@ body {
     transition: opacity 0.8s ease;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logos {
     fill: #ffffff;
     width: 2.5em;
@@ -100,7 +104,7 @@ body {
     height: 18em;
 }
 
-.social{
+.social {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -111,7 +115,7 @@ body {
     text-align: center;
 }
 
-.me-name h3{
+.me-name h3 {
     color: #fff;
     font-size: 1.5em;
     margin-top: 1em;
@@ -157,12 +161,11 @@ p {
     justify-content: space-evenly;
 }
 
-
 .button {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8em 1.5em;
+    padding: 0.8em 0.8em;
     font-size: 1.2em;
     font-weight: bold;
     color: #fff;
@@ -178,4 +181,23 @@ p {
     background: linear-gradient(135deg, #04708a, #06506d);
     transform: translateY(-4px);
     box-shadow: 0 10px 20px rgba(6, 80, 109, 0.3), 0 4px 8px rgba(6, 80, 109, 0.2);
+}
+
+@media (max-width: 875px) {
+    .card-content {
+        position: fixed;
+        top: 20%;
+        left: 15%;
+        width: 75vw;
+        height: 65vh;
+        background: rgb(255, 255, 255);
+        border-radius: 1em;
+        box-shadow: 0px 0px 1em #012431;
+    }
+}
+
+@media (max-width: 740px) {
+    .card-content {
+        opacity: 0;
+    }
 }

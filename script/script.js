@@ -3,6 +3,6 @@ document.getElementById('transitionButton').addEventListener('click', function (
 
     setTimeout(function () {
         window.location.href = './page/about_me.html';
-    }, 1000);
+    }, 500);
 });
 
